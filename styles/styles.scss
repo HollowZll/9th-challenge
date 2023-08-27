@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Inter-Bold' ;
+    src: url(../assets/fonts/static/Inter-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Extra-Bold';
+    src: url(../assets/fonts/static/Inter-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../assets/fonts/static/Inter-Regular.ttf) format('truetype');
+}
+// Fonts
+$inter : 'Inter-bold', sans-serif;
+$interB : 'Inter-Extra-Bold', sans-serif;
+$interR : 'Inter-Regular', sans-serif;
+//Primary
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+//Neutral 
+$blue: hsl(240, 100%, 5%);
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$grayish-blue-dark: hsl(236, 13%, 42%);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: $interR;
+}
+// header mob vertion
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+    padding-top: 13px;
+    padding-right: 25px;
+}
+
+.hamburger {
+    height: 17px;
+    width: 40px;
+    align-self: center;
+}
+
+      
+#menu {
+    position:  fixed;
+    left: 150px;
+    bottom: 1px;
+    background-color: white;
+    width: 350px;
+    height: 100%;
+    visibility: hidden;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    
+}
+
+.options {
+    list-style: none;
+    line-height: 50px;
+    margin-top: 80px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+#flexX {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+// main {
+//     opacity: 50%;
+//     background-color: gray;
+//     height: 1000px;
+// }
+
+
+
