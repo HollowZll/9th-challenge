@@ -23,13 +23,19 @@ $off-white: hsl(36, 100%, 99%);
 $grayish-blue: hsl(233, 8%, 79%);
 $grayish-blue-dark: hsl(236, 13%, 42%);
 
+
+
 * {
     margin: 0px;
     padding: 0px;
     font-size: 15px;
     font-family: $interR;
 }
-// header mob vertion
+// header mob vertion & hamburger
+
+#menuList {
+    display: none;
+}
 
 #navbar {
     display: flex;
@@ -48,16 +54,14 @@ $grayish-blue-dark: hsl(236, 13%, 42%);
 
       
 #menu {
-    position:  fixed;
-    left: 150px;
-    bottom: 1px;
+    position: absolute;
+    left: 140px;
     background-color: white;
-    width: 350px;
-    height: 100%;
+    width: 35vh;
+    height: 1820px;
     visibility: hidden;
     z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     
 }
 
@@ -69,17 +73,254 @@ $grayish-blue-dark: hsl(236, 13%, 42%);
     font-size: 18px;
 }
 
+li:hover {
+    color: $soft-orange;
+    cursor: pointer;
+}
+
 #flexX {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
-// main {
-//     opacity: 50%;
-//     background-color: gray;
-//     height: 1000px;
-// }
+#fade {
+    height: 1800px;
+
+}
+
+#btnClose {
+    position: relative;
+    left: 15px;
+    top: 8px;
+}
+
+
+//main article mobile 
+
+.mainArt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#retroImgMob {
+    width: 375px;
+    height: 300px;
+    margin-top: 20px;
+    
+}
+
+h1 {
+    font-size: 40px;
+    font-family: $interB;
+    width: 343px;
+    margin-top: 13px;
+    line-height: 39px;
+}
+
+#artMainParag {
+    color: $grayish-blue-dark;
+    width: 343px;
+    font-size: 15px;
+    line-height: 29px;
+    margin-top: 10px;
+}
+
+
+#orangeButton {
+    position: relative;
+    width: 185px;
+    height: 48px;
+    color: white;
+    background-color: $soft-red;
+    border: none;
+    margin-top: 20px;
+}
+
+#orangeButton:hover {
+    cursor: pointer;
+    background-color: black;
+}
+// New articles
+
+.flexNew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+#newContainer {
+    width: 343px;
+    height: 440px;
+    background-color: $blue;
+    color: $off-white;
+}
+
+.newArticle {
+    margin: 13px
+}
+
+h2 {
+    margin: 13px;
+    color: $soft-orange;
+    font-family: $interB;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 19px;
+    font-family: $inter;
+    color: $off-white;
+    margin-bottom: 10px;
+}
+
+h3:hover {
+    cursor: pointer;
+    color: $soft-orange;
+}
+
+.newParag {
+    color: $grayish-blue;
+    font-size: 15px;
+    width: 302px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+hr {
+    border-color: $grayish-blue-dark;
+    margin-bottom: 30px;
+    width: 302px;
+}
+
+
+// Top 3 articles
+
+.flexDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    flex-direction: column;
+}
+.topArtImg {
+  width: 100px;
+  height: 129px;
+  margin-right: 10px;
+}
+
+.topArticle {
+    display: flex;
+    justify-content: space-around;
+    width: 349px;
+    margin: 30px;
+}
+
+h4 {
+    font-size: 32px;
+    color: $grayish-blue;
+    font-family: $inter;
+    margin-bottom: 15px;
+}
+
+h5 {
+    color: black;
+    font-family: $inter;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+h5:hover {
+    cursor: pointer;
+    color: $soft-orange;
+}
+
+.paragTopArt {
+    color: $grayish-blue-dark;
+    font-size: 15px;
+}
+
+.topArtText {
+    width: 219px;
+}
 
 
 
+
+// Desktop transformation 
+
+
+@media screen and (min-width: 385px) {
+    
+
+    // header (menu)
+    #btnClose {
+        display: none;
+    }
+    #btnID {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    #menuList {
+        display: block;
+    }
+    .options {
+        display: flex;
+        justify-content: space-around;
+    }
+    li {
+        margin: 10px;
+    }
+    header {
+        margin: 50px;
+    }
+
+    // main article 
+
+    #retroImgMob {
+        content: url("/assets/images/image-web-3-desktop.jpg");
+        width: 730px;
+        height: 300px;
+    }
+
+    #desktopFlex {
+        display: flex;
+        margin: 0px;
+    }
+    #orangeButton {
+        left: 2px;
+    }
+    #desktopTopFlex {
+        display: flex;
+        justify-content: space-around;
+        width: 1110px;
+        
+    }
+    .flexNew {
+        margin: 0px;
+        left: 200px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #newContainer {
+        height: 511px;
+        margin-top: 20px;
+    }
+
+  #topArticles {
+    display: flex;
+    width: 1110px;
+  }
+    
+  }
