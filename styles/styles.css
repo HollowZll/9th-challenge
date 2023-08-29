@@ -68,7 +68,7 @@ li:hover {
 }
 
 #fade {
-  height: 1800px;
+  height: 1000px;
 }
 
 #btnClose {
@@ -277,5 +277,8 @@ h5:hover {
   #topArticles {
     display: flex;
     width: 1110px;
+  }
+  #menu {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
